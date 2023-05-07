@@ -1,0 +1,2148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./movies.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./slide.css">
+  <link rel="stylesheet" href="./animate-css-animate.css-e8c4fab/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
+  <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src=" https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- css swiper=================== -->
+  <link rel="stylesheet" href="./cdnjs/swiper.min.css">
+
+
+  <style>
+    body {
+      color: white;
+  
+    }
+    
+.videoCards {
+  width: 100%;
+}
+.contentWrap {
+  width: 100%;
+	max-width: 1500px;
+  background-color: pink;  
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
+.thirdsWrap {
+  top: 20px;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  box-sizing: border-box;
+  background: transparent;
+  transition-duration: 0.5s;
+  background: rgba;
+	  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+
+.vidCard {
+  background: white;
+  width: 90%;
+  display: inline-block;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #d9d9de;
+  border-width: 2px;
+  margin-top: 26px;
+   margin-bottom: 26px;
+}
+.vidSubHeading {
+  text-align: center;
+  font-size: 14px;
+  color: grey;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.vidBox {
+  background-image: url("./images/1681122933496.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  margin-left: -2px;
+  padding-right: 3px;
+  position: relative;
+  display: inline-block;
+}
+.vidBox1 {
+  background-image: url("./images/OIP\ \(1\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  margin-left: -2px;
+  padding-right: 3px;
+  position: relative;
+  display: inline-block;
+}
+.vidBox2 {
+  background-image: url("./images/1681122942355.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  margin-left: -2px;
+  padding-right: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.vidBox3 {
+  background-image: url("./images/gang\ of\ lagos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  margin-left: -2px;
+  padding-right: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.vidBox4 {
+  background-image: url("./images/R\ \(2\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  margin-left: -2px;
+  padding-right: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.vidBox5 {
+  background-image: url("./images/R\ \(3\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center;
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  margin-left: -2px;
+  padding-right: 3px;
+  position: relative;
+  display: inline-block;
+}
+.vidBoxCover {
+  padding-right: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center;
+  margin-top: 0px;
+  position: absolute;
+  width: calc(100% - 1px);
+  position: relative;
+  cursor: pointer;
+   padding-right: 5px;
+
+}
+
+.buttonVid {
+  text-align: center;
+  font-size: 14px;
+  color: grey;
+  line-height: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  width: 200px;
+  display: inline-block;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  background: white;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/*.vidBoxCover:hover {
+  opacity: 0.4;
+  transition-duration: 0.5s;
+} */
+
+.buttonVid:hover {
+  background: grey;
+  color: white;
+  transition-duration: 0.5s;
+  border-color: grey;
+}
+
+.player {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 45.45px solid transparent;
+  border-bottom: 45.45px solid transparent;
+  border-left: 59.05px solid white;
+  border-right: 59.05px solid transparent;
+  left: calc(50% - 20px);
+  top: calc(50% - 48px);
+  background: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.player:after {
+  content: '';
+  position: absolute;
+  top: -75px;
+  left: -115px;
+  bottom: -75px;
+  right: -35px;
+  border-radius: 50%;
+  border: 10px solid white;
+  z-index: 2;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.player:hover:after, .player:focus:after {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+}
+
+#cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+}
+
+.videoBox {
+  position: fixed;
+  top: 12.5%;
+  background: black;
+  z-index: 50;
+  display: block;
+  background-color: white;
+  opacity: 0;
+  display: none;
+  width: 300px;
+  height: 300px;
+}
+
+.iframe1 {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  top: 5%;
+  left: 2.5%;
+}
+
+#contentWrap {
+	position: relative;
+	max-width: 1500px;
+    
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
+
+.close-button {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 50px;
+  display: inline-block;
+  background: white;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+ 
+}
+.close-button:before,
+.close-button:after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -15px;
+  display: block;
+  height: 10px;
+  width: 30px;
+  background-color: grey;
+  transition: all 0.2s ease-out;
+}
+.close-button:after {
+  transform: rotate(45deg);
+}
+.close-button:hover:before,
+.close-button:hover:after {
+  transform: rotate(90deg);
+}
+
+.topClickContainer{
+    color: white;
+    position: absolute;
+    left: calc(50%);
+    top: 620px;
+}
+
+
+.player2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 36.36px solid transparent;
+  border-bottom: 36.36px solid transparent;
+  border-left: 47.24px solid white;
+  border-right: 47.24px solid transparent;
+  left: calc(50% - 20px);
+  top: calc(50% - 48px);
+  background: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.player2:after {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -92px;
+  bottom: -60px;
+  right: -28px;
+  border-radius: 50%;
+  border: 10px solid white;
+  z-index: 2;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.player2:hover:after, .player:focus:after {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+}
+
+.vidHeadline {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 900px){
+  .buttonVid {
+  width: 150px;
+
+}
+  
+}
+
+@media only screen and (max-width: 600px){
+  .thirdsWrap {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .buttonVid {
+  width: 120px;
+}
+}
+    .principal h2{
+     
+      font-family: 'Rubik Wet Paint', cursive;
+    }
+    ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.img a{
+  margin-left: 100px;
+}
+a{
+	display:block;
+	height:100%;
+}
+.swiper-container {
+width: 100%;
+height: 300px;
+background-color: black;
+}
+
+#s-1{background-image: url("./images/1681122933496.jpg");
+background-size: cover;
+background-repeat: no-repeat;}
+#s-2{background-image: url("./images/1681122942355.jpg");
+background-size: cover;
+background-repeat: no-repeat;}
+#s-3{background-image: url("./images/download2.jpg");
+background-size: cover;
+background-repeat: no-repeat;}
+#s-4{background-image: url("./images/download4.jpg");
+background-size: cover;
+background-repeat: no-repeat;}
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (min-width:100px) and (max-width:300px) {
+  .vidcard{
+    margin-bottom: 500px;
+  }
+}
+
+h1 {
+  
+  font-size: 2em;
+  padding: 2em;
+  text-align: center;
+}
+
+.accordion dt > a {
+  text-align: center;
+  font-weight: 700;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color 0.5s ease-in-out;
+}
+.accordion dd {
+  background-color: #e70634;
+  color:#fafafa;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.accordion dd > p {
+  padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+  position: relative;
+  background-color: #e70634;
+}
+
+.accordionTitle {
+  background-color: #22313F;
+  border-bottom: 1px solid #2c3e50;
+}
+.accordionTitle:before {
+  content: "+";
+  font-size: 1.5em;
+  line-height: 0.5em;
+  float: left;
+  -moz-transition: -moz-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+.accordionTitle:hover {
+  background-color: #2c3e50;
+}
+
+.accordionTitleActive {
+  background-color:#34495e;
+}
+.accordionTitleActive:before {
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+}
+@media all {
+  .accordionItem {
+    max-height: 50em;
+    -moz-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    -webkit-transition: max-height 1s;
+    transition: max-height 1s;
+  }
+}
+@media screen and (min-width: 48em) {
+  .accordionItem {
+    max-height: 15em;
+    -moz-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+  }
+}
+
+.accordionItemCollapsed {
+  max-height: 0;
+}
+
+.animateIn {
+  -webkit-animation-name: accordionIn;
+  -webkit-animation-duration: 0.65s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-name: normal;
+  -moz-animation-duration: 0.65s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: alternate;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: both;
+  -moz-animation-delay: 0s;
+  animation-name: accordionIn;
+  animation-duration: 0.65s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+
+.animateOut {
+  -webkit-animation-name: accordionOut;
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-name: accordionOut;
+  -moz-animation-duration: 0.75s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: alternate;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: both;
+  -moz-animation-delay: 0s;
+  animation-name: accordionOut;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+@-moz-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+}
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+    @media screen and (min-width:100px) and (max-width:500px) {
+      .hhh{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+      .hhh img{
+        width: 100%;
+      }
+
+    }
+    @media screen and (min-width:100px) and (max-width:800px) {
+      .search-input{
+        display: none;
+      }
+      .bell{
+        display: none;
+      }
+      .logo{
+        margin: 0;
+        font-size: 30px !important;
+        padding: 0;
+      }
+      .navigation{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      .principal{
+        font-size: 25px !important;
+        margin-left: 150px !important;
+      }
+      .d-block{
+        height: 200px !important;
+      }
+      .spi{
+        display: flex;
+        flex-direction: column;
+      }
+      .spi img{
+        width: 100%;
+      }
+      .hhh{
+        display: flex;
+        flex-direction: column;
+      }
+      .hhh img{
+        width: 100%;
+      }
+      .hmm{
+        display: flex;
+        flex-direction: column;
+
+      }
+      .hmm img{
+        width: 100%;
+      }
+      .hmm p{
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+    @media screen and (min-width:700px) and (max-width:1100px) {
+      .search-input{
+        display: none;
+      }
+      .principal{
+    
+        margin-left: 150px !important;
+      }
+      .hmm{
+        margin: 0px !important;
+      }
+    }
+  </style>
+</head>
+
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  <!-- Navigation -->
+  <nav class="navigation py-3">
+
+    <!-- menu-btn   -->
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+      <span class="nav-icon"></span>
+
+    </label>
+
+
+    <!-- Logo -->
+    <p class="logo py-0">
+      Netcreed <span>.hd</span>
+
+    </p>
+
+    <!-- menu -->
+    <ul class="menu">
+      <li><a href="./movies.html">Home</a></li>
+      <li><a href="./book.html">Tickets</a></li>
+      <li><a href="./Shows.html">TV Show</a></li>
+      <li><a href="./movie.html">Movies</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+
+    </ul>
+
+    <!-- searchbox -->
+    <form action="">
+
+      <input type="text" name="Search" placeholder="Search Movie" class="search-input" style="padding: 5px; border-radius: 7px;" required id="">
+      <button type="submit" class="btn btn-danger"><img src="./search.svg" alt=""></button>
+      <img src="./bell.svg" width="130px" alt="" class="bell px-5">
+
+    </form>
+  </nav>
+  <!-- nav-end -->
+
+      <br>
+      <div id="carouselExampleWhite" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="./images/bgspider.jpg" class="d-block w-100" alt="..." style="width: 100% !important; height: 650px !important;">
+            <div class="carousel-caption d-none d-md-block top-0 text-white ">
+            
+  
+          </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./images/bg2.jpg" class="d-block w-100" alt="..." style="width: 100% !important; height: 650px !important;">
+            <div class="carousel-caption d-none d-md-block">
+          
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./images/R.jpg" class="d-block w-100" alt="..." style="width: 100% !important; height: 650px !important;">
+            <div class="carousel-caption d-none d-md-block">
+             
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./images/bg12.jpg" class="d-block w-100" alt="..." style="width: 100% !important; height: 650px !important;">
+            <div class="carousel-caption d-none d-md-block">
+
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./images/pexels-sebastiaan-stam-1097456.jpg" class="d-block w-100" alt="..." style="width: 100% !important; height: 650px !important;">
+            <div class="carousel-caption d-none d-md-block">
+           
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./images/bg15.jpg" class="d-block w-100" alt="..." style="width: 100% !important; height: 650px !important;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./images/wallpapersden.com_money-heist_3840x2232.jpg" class="d-block w-100" alt="..." style="width: 100% !important; height: 650px !important;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./images/bg12.jpg" class="d-block w-100" alt="..." style="width: 100% !important; height: 650px !important;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+         
+    
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleWhite" data-bs-slide="prev">
+          <span  aria-hidden="true" > <img src="./left.svg" width="50px" alt=""></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleWhite" data-bs-slide="next">
+          <span aria-hidden="true">  <img src="./right.svg" width="50px" alt=""></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+        </div>
+      
+        </div>
+      
+    <div class="content">
+      <div class="principal mx-5">
+        <h2>Movies & <br> Animations</h2>
+        <p class="fs-5">All available here on movies creed...Watch <br> movies the easiest way </p>
+        <div class="more-about-movie">
+          <span class="quality p-1" style="background-color: #e70634;">Full HD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </section>
+
+
+
+
+
+  
+<section>
+  <div class="container">
+    <h1>Frequently asked questions</h1>
+    <div class="accordion">
+      <dl>
+        <dt><a class="accordionTitle" href="#">What is NETCREED</a></dt>
+        <dd class="accordionItem accordionItemCollapsed">
+          <p>Netcreed is a movies website where u can watch any kind of movie you want  </p>
+        </dd>
+        <dt><a href="#" class="accordionTitle">How do i watch the movies i want</a></dt>
+        <dd class="accordionItem accordionItemCollapsed">
+          <p>Go to TV shows on the navigation bar, Seaarch and select the movie you want to watch </p>
+        </dd>
+        <dt><a href="#" class="accordionTitle">Can i post movies on Netcreed</a></dt>
+        <dd class="accordionItem accordionItemCollapsed">
+          <p>Yes you can, Netcreed has been built to help movie lovers get the movies they want and also post their favourite movies </p>
+        </dd>
+      </dl>
+    </div>
+</div>
+</section>
+
+<section>
+  <div class="container">
+    <h1 style="color: #e70634;" class="py-5 mx-4">Recommended Movies</h1>
+
+
+
+
+
+<section>
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
+
+
+</head>
+<body>
+<!-- Slider main container -->
+<div class="swiper-container">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div id="s-1" class="swiper-slide"><a href="https://google.com">Slide 1</a></div>
+<div id="s-2" class="swiper-slide"><a href="https://apple.com">Slide 2</a></div>
+<div id="s-3" class="swiper-slide"><a href="http://ibm.com">Slide 3</a></div>
+<div id="s-4" class="swiper-slide"><a href="http://ibm.com">Slide 4</a></div>
+</div>
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+
+<!-- If we need scrollbar -->
+<div class="swiper-scrollbar"></div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+	//initialize swiper when document ready  
+	var mySwiper = new Swiper ('.swiper-container', {
+	  // Optional parameters
+	    direction: 'horizontal',
+	    loop: true,
+	    
+	    centeredSlides	:true,
+	    
+	    spaceBetween: '5%',
+	    slidesPerView: 4,
+	    
+	    // If we need pagination
+	    pagination: '.swiper-pagination',
+	    
+	    // Navigation arrows
+	    nextButton: '.swiper-button-next',
+	    prevButton: '.swiper-button-prev',
+	    
+	    // And if we need scrollbar
+	    scrollbar: '.swiper-scrollbar',
+	    slideToClickedSlide	: true
+	});      
+	$('.swiper-slide a').click(function(){
+		//event.preventDefault()
+	if(!mySwiper.animating){
+		console.log('NOTanimating - so click thru');
+	}else{
+		console.log('animating');
+		return false;
+	}
+	});
+		
+}); 
+</script>
+</section>
+
+
+    
+  
+
+<div class="container">
+ 
+</div>
+
+  <section>
+    <div class="latest-heading">
+      <h1 class="container py-5 text-danger">Latest movies</h1>
+    </div>
+
+<div class="spi container d-flex justify-content-between ">
+  <p class="fs-3 pt-5" style="margin-top: 100px;">Watch the most popular streaming movies in the world very easy ....Available for teens, kids and adults without much to cost
+    .Avaible here on Netcreed where "the movies home"
+
+  </p>
+  <img src="./images/bgspdy.png" width="50%" alt="">
+</div>
+
+    <!-- container------------------- -->
+    <div class="container">
+      <div class="post-container">
+
+
+
+        <div class="post-box">
+
+          <div class="post-img">
+            <img src="./images/download4.jpg"  alt="">
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+
+
+            <div class="bottom-text">
+              <div class="movie-name">
+
+
+                <span>2021</span>
+                <strong class="fs-4">The Marksman </strong>
+              </div>
+              <!-- category and rating -->
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Action</a>,<a href="">Thriller</a>
+
+                </div>
+
+
+
+
+                <div class="rating">
+
+                  <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                  <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                  <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                  <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                  <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/download2.jpg" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2019</span>
+                  <strong class="fs-4">6 Underground </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Action</a>,<a href="">Thriller</a>
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/download12.jpg" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2019</span>
+                  <strong class="fs-4">10 Minutes gone </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Action</a>,<a href="">Crime</a>
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/download3.jpg" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2021</span>
+                  <strong class="fs-4">Vacation Friends </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Movies</a>,<a href="">Comedy</a>,
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/download22.jpg" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2021</span>
+                  <strong class="fs-5">The United States vs Billie Holiday </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Drama</a>,<a href="">Music</a>
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/download16.jpg" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2019</span>
+                  <strong class="fs-4">Missing Link </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Adventure</a>,<a href="">Family</a>
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/1681122942355.jpg" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2023</span>
+                  <strong class="fs-5">Ant-man and the wasp: Quantumania </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Action</a>,<a href="">Adventure</a>
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/download5.webp" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2023</span>
+                  <strong class="fs-4">Old Guard </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Horror</a>,<a href="">Mistery</a>,<a href="">Thriller</a>
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+  <section>
+
+    <div class="latest-heading">
+      <h1 class="container py-5 text-danger">Kids $ Fun</h1>
+    </div>
+
+
+    <div class="container">
+      <div class="d-flex justify-content-between hhh">
+        <p class="fs-2 my-5">Send kids on Adventures with their favourite characters in a space made just for them...free with your membership</p>
+      <img src="./images/Ani1.png" width="50%" alt=""></div>
+      <div class="d-flex justify-content-between mt-5 hhh">
+        <img src="./images/ani2.png" width="50%x" alt="">
+      <p class="text-white fs-2" style="align-items: center; margin-top: 200px;">
+        Don't just watch..Ensure you have fun going through .This website isn't only recommended for adults and teens ..but for your KidsSream with us now and low cost
+  
+      </p>
+  </div>
+    </div>
+    <!-- container------------------- -->
+    <div class="container">
+      <div class="post-container">
+
+
+
+        <div class="post-box">
+
+          <div class="post-img">
+            <img src="./images/download24.jpg" alt="">
+          </div>
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+
+
+            <div class="bottom-text">
+              <div class="movie-name">
+
+
+                <span>2023</span>
+                <strong>Shazam: Fury of the Gods </strong>
+              </div>
+              <!-- category and rating -->
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Horror</a>,<a href="">Mistery</a>,<a href="">Thriller</a>
+
+                </div>
+
+
+
+
+                <div class="rating">
+
+                  <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                  <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                  <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                  <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                  <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/download16.jpg" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2023</span>
+                  <strong>Shazam: Fury of the Gods </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Horror</a>,<a href="">Mistery</a>,<a href="">Thriller</a>
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/download13.jpg" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2023</span>
+                  <strong>Shazam: Fury of the Gods </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Horror</a>,<a href="">Mistery</a>,<a href="">Thriller</a>
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- container------------------- -->
+        <div class="post-container">
+
+
+
+          <div class="post-box">
+
+            <div class="post-img">
+              <img src="./images/download8.jpg" alt="">
+            </div>
+            <div class="main-slider-text">
+              <span class="quality">Full HD</span>
+
+
+              <div class="bottom-text">
+                <div class="movie-name">
+
+
+                  <span>2023</span>
+                  <strong>Shazam: Fury of the Gods </strong>
+                </div>
+                <!-- category and rating -->
+                <div class="category-rating">
+                  <div class="category">
+                    <a href="#">Horror</a>,<a href="">Mistery</a>,<a href="">Thriller</a>
+
+                  </div>
+
+
+
+
+                  <div class="rating">
+
+                    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+  </section>
+
+
+
+ <section>
+  <div class="hmm container d-flex">
+    <div>
+    <img src="./images/download0.png" alt=""></div>
+    <div>
+      <h2 class="text-center" style="margin-top: 80px;">Download Your Favorite shows </h2>
+      <p>To watch online with little data cost</p>
+    </div>
+  </div>
+ </section>
+ 
+
+
+
+ 
+
+
+    
+
+    <div class="container">
+      <h1 class="text-danger">Video shorts</h1>
+    </div>
+
+
+    <section>
+      <div>
+        <div class="container"> 
+    <div class="nxt">
+   <br><div class="row">
+   
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+      <iframe width="400" height="315" src="https://www.youtube.com/embed/Zp6gw8XDKN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/9IDUjSsmij0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/a2iUtWQcsro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/2GEUf29ukoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/ZlNFpri-Y40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/zbnXd-zCD6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/RVwJp_959d8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/g8OADU2-48A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/8wXcj2FFisk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      </div>
+      </div>
+    </section>
+
+
+
+    <section>
+<h1 class="text-danger">Teams</h1>
+
+      <div>
+        <div class="container"> 
+    <div class="nxt">
+   <br><div class="row">
+   
+    <div class="col-lg-4 col-md-6 col-sm-12">
+     <img src="./images/cin1.png" style="width: 90%;" alt="">
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 ">
+      <img src="./images/cin2.png" style="width: 90%;" alt="">
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 ">
+      <img src="./images/cin3.png" style="width: 90%;" alt="">
+      </div>
+
+      <div class="container"> 
+        <div class="nxt">
+      <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-5 mx-5">
+     <img src="./images/cin4.png" style="width: 70%;" alt="">
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+       <img src="./images/cin5.png" style="width: 100%;" alt="">
+   
+      
+    
+      
+      </div>
+      </div>
+    </section>
+
+<br><br>
+
+
+
+
+</div>
+<footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+/*!
+ * classie - class helper functions
+ * from bonzo https://github.com/ded/bonzo
+/*!
+ * classie - class helper functions
+ * from bonzo https://github.com/ded/bonzo
+ * 
+ * classie.has( elem, 'my-class' ) -> true/false
+ * classie.add( elem, 'my-new-class' )
+ * classie.remove( elem, 'my-unwanted-class' )
+ * classie.toggle( elem, 'my-class' )
+ */
+
+/*jshint browser: true, strict: true, undef: true */
+/*global define: false */
+( function( window ) {
+'use strict';
+function classReg( className ) {
+  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+}
+var hasClass, addClass, removeClass;
+
+if ( 'classList' in document.documentElement ) {
+  hasClass = function( elem, c ) {
+    return elem.classList.contains( c );
+  };
+  addClass = function( elem, c ) {
+    elem.classList.add( c );
+  };
+  removeClass = function( elem, c ) {
+    elem.classList.remove( c );
+  };
+}
+else {
+  hasClass = function( elem, c ) {
+    return classReg( c ).test( elem.className );
+  };
+  addClass = function( elem, c ) {
+    if ( !hasClass( elem, c ) ) {
+      elem.className = elem.className + ' ' + c;
+    }
+  };
+  removeClass = function( elem, c ) {
+    elem.className = elem.className.replace( classReg( c ), ' ' );
+  };
+}
+
+function toggleClass( elem, c ) {
+  var fn = hasClass( elem, c ) ? removeClass : addClass;
+  fn( elem, c );
+}
+var classie = {
+  hasClass: hasClass,
+  addClass: addClass,
+  removeClass: removeClass,
+  toggleClass: toggleClass,
+  has: hasClass,
+  add: addClass,
+  remove: removeClass,
+  toggle: toggleClass
+};
+if ( typeof define === 'function' && define.amd ) {
+  define( classie );
+} else {
+  window.classie = classie;
+}
+})( window );
+var $ = function(selector){
+  return document.querySelector(selector);
+}
+var accordion = $('.accordion');
+accordion.addEventListener("click",function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  if(e.target && e.target.nodeName == "A") {
+    var classes = e.target.className.split(" ");
+    if(classes) {
+      for(var x = 0; x < classes.length; x++) {
+        if(classes[x] == "accordionTitle") {
+          var title = e.target;
+          var content = e.target.parentNode.nextElementSibling;
+          classie.toggle(title, 'accordionTitleActive');
+          if(classie.has(content, 'accordionItemCollapsed')) {
+            if(classie.has(content, 'animateOut')){
+              classie.remove(content, 'animateOut');
+            }
+            classie.add(content, 'animateIn');
+          }else{
+             classie.remove(content, 'animateIn');
+             classie.add(content, 'animateOut');
+          }
+          classie.toggle(content, 'accordionItemCollapsed');      
+        }
+      }
+    }  
+  }
+});
+  </script>
+
+
+<script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+  <script src="./jquery.js"></script>
+  <script src="./swiper/nolimits4web-swiper-b67d7c1/scripts/build-js-bundle.js"></script>
+  <script src="./cdnjs/swiper.js"></script>
+</body>
+
+</html>

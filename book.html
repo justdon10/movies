@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <style>
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+max-width: 1400px;
+margin: auto;
+width: 100%;
+
+}
+
+body{
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.navigation .menu-icon{
+cursor: pointer;
+float: right;
+padding: 20px 10px;
+z-index: 103;
+
+
+}
+
+.navigation .menu-icon .nav-icon{
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    width: 25px;
+    position: relative;
+    transition: background 0.2s ease-out ;
+
+}
+
+.navigation .menu-icon .nav-icon::before,
+.navigation .menu-icon .nav-icon::after{
+    background-color: #ffffffcc;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all ease-out 0.2s;
+}
+.navigation .menu-icon .nav-icon::before{
+    top: 8px;
+}
+.navigation .menu-icon .nav-icon::after{
+    top: -8px;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon{
+    background-color: transparent;;;;
+}
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+top: 0px;
+}
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top: 0px;
+}
+
+.menu-btn{
+    display: none;
+
+}
+
+/* --menu------- */
+.menu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #111111eb;
+    z-index: 102;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation:fade 0.3s;
+}
+
+.menu li a{
+    color: #ffffff;
+    margin: 0px 40px;
+    font-size: 2rem;
+    font-family: monoton;
+transition: all ease 0.3s;
+}
+
+.menu li a:hover{
+    font-size: 2.3rem;
+    color: #e70634;
+    transition: all ease 0.3s;
+}
+
+.navigation .menu-btn:checked ~ .menu{
+    display: flex;
+}
+
+@keyframes fade{
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}
+
+/* logo */
+.logo{
+    color: #e70634;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0px auto 0px 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Monoton';
+    letter-spacing: 1px;
+   
+
+font-family: 'Monoton';
+
+}
+a{
+    text-decoration: none;
+}
+.logo span{
+    font-size: 1rem;
+    margin-left: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.btn{
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-left:500px;
+ 
+
+}
+.movie-card{
+  background-image: url("./images/zack.jpg");
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.495);
+  padding-top: 200px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+}
+.background{
+  background-image: url("./images/cinema.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 250px;
+  background-attachment: fixed;
+  padding-bottom: 200px;
+  color: white;
+  text-align: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.566);
+}
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.background h1{
+  font-size: 50px;
+}
+@media(max-width:1200px){
+    
+  
+    .post-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #main-slider,
+    #latest,
+    .slider-btns{
+        width: 90%;
+    }
+    .menu li a{
+        margin: 0px;
+        font-size: 1.6rem;
+    }
+    .menu{
+        flex-direction: column;
+    }
+  }
+
+@media screen and (min-width:100px) and (max-width:1200px) {
+  .hmm{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .input{
+width: 100px !important;
+  }
+  .btn{
+margin: 0;
+  }
+}
+    
+    </style>
+</head>
+
+    <body>
+
+
+
+
+
+
+
+
+
+
+  <!-- Navigation -->
+  <div class="container-fluid">
+  <nav class="navigation py-3">
+
+    <!-- menu-btn   -->
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+      <span class="nav-icon"></span>
+
+    </label>
+
+
+    <!-- Logo -->
+    <p class="logo py-0">
+      Netcreed <span>.hd</span>
+
+    </p>
+
+    <!-- menu -->
+    <ul class="menu">
+      <li><a href="./movies.html">Home</a></li>
+      <li><a href="./book.html">Tickets</a></li>
+      <li><a href="./Shows.html">TV Show</a></li>
+      <li><a href="./movie.html">Movies</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+
+    </ul>
+
+    <!-- searchbox -->
+  
+      <img src="./bell.svg" width="130px" alt="" class="px-5">
+
+    </form>
+  </nav>
+  <!-- nav-end -->
+
+      <br>
+</div>
+
+
+
+
+
+
+<div class="background">
+ <h1> BOOK A CINEMA TICKET NOW</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <h2 class="text-white py-5">Currently Showing</h2>
+</div>
+
+
+
+
+<div class="container text-white">
+  <h2 class="text-white">Choose Where you want to watch from</h2><br>
+
+  <img src="./address.svg" width="25px" alt=""> <select name="" class=" yoo" style="width: 90%; height: 40px; color: white; font-weight: 700; background: transparent;"" id="">
+   
+    <option value="" class="text-black">
+     LAGOS
+    </option>
+    <option value="" class="text-black">
+      ONDO
+    </option>
+    <option value="" class="text-black">
+OYO
+    </option>
+   
+  </select>
+<br><br>
+
+
+
+  <img src="./address.svg" width="25px" alt=""> <select name="" class=" yoo" style="width: 90%; height: 40px; color: white; font-weight: 700; background: transparent;"" id="">
+   
+    <option value="" class="text-black">
+     LANDMARK
+    </option>
+    <option value="" class="text-black">
+LEKKI
+    </option>
+    <option value="" class="text-black">
+VGC
+    </option>
+    <option value="" class="text-black">
+AKURE
+    </option>
+    <option value="" class="text-black">
+SAMONDA
+    </option>
+   </option>
+  </select>
+<br><br>
+
+<img src="./address.svg" width="25px" alt=""> <select name="" class=" yoo" style="width: 90%; height: 40px; color: white; font-weight: 700; background: transparent;"" id="">
+   
+  <option value="" class="text-black">
+ Filmhouse Cinema
+  </option>
+  <option value="" class="text-black">
+  SM Cinema
+  </option>
+ 
+ 
+</select>
+<br><br>
+
+<img src="./address.svg" width="25px" alt=""> <select name="" class=" yoo" style="width: 90%; height: 40px; color: white; font-weight: 700; background: transparent;"" id="">
+   
+  <option value="" class="text-black">
+John Wick
+  </option>
+  <option value="" class="text-black">
+  The Mask
+  </option>
+  <option value="" class="text-black">
+Black Panther
+  </option>
+ 
+</select>
+<br><br>
+  <img src="./address.svg" width="25px" alt=""> <select name="" class=" yoo" style="width: 90%; height: 40px;color: white; font-weight: 700; background: transparent;"  id="">
+   
+    <option value="" class="text-black">
+      
+   TODAY
+    </option>
+    <option value="" class="text-black">
+MAY 8,2023
+    </option>
+    <option value=""class="text-black">
+MAY 16,2023
+    </option>
+    <option value="" class="text-black">
+JUNE 14,2023
+    </option>
+    <option value="" class="text-black">
+JUNE 15,2023
+    </option>
+  </select>
+
+  
+<button type="button" class="mx-4 my-4 py-2 bg-danger text-white fs-5" style="border-radius: 7px; border: none;"> Book Ticket</button>
+<br><br><br><br>
+
+
+  <div class="container">
+    <h1 class="py-4 text-white">Images</h1>
+
+  </div>
+  <div class="container"> 
+    <div class="nxt">
+   <br><div class="row">
+   
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <img src="./images/pop1.jpg" style="height: 500px; width: 90%; border: 3px solid white; border-radius: 20px;" class="img-fluid" alt="">
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <img src="./images/pop6.jpg" style="height: 500px;  width: 90%;  border: 3px solid white; border-radius: 20px;" class="img-fluid" alt="">
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <img src="./images/pop4.jpg" style="height: 500px;  width: 90%;  border: 3px solid white; border-radius: 20px;" class="img-fluid" alt="">
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <img src="./images/pop7.jpg" style="height: 500px;  width: 90%;  border: 3px solid white; border-radius: 20px;" class="img-fluid" alt="">
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <img src="./images/pop3.jpg" style="height: 500px;  width: 90%;  border: 3px solid white; border-radius: 20px;" class="img-fluid" alt="">
+      
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+        <img src="./images/pop5.jpg" style="height: 500px;  width: 90%;  border: 3px solid white; border-radius: 20px;" class="img-fluid" alt="">
+      
+      </div>
+  <br><br><br><br><br><br><br>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid movie-card vid4 text-white">
+  <h1 class="text-center">Zack Snyder's Justice League</h1>
+  <p class="text-center fs-5">Determined to ensure that Superman's ultimate sacrifice wasn't in vain, Bruce Wayne <br> recruits a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
+  <a href="./vid4.html"><button type="button" class="watch btn btn-danger" style="width: 20%;"> <img src="./play.svg" width="25px" alt=""> Watch Trailer </button></a> 
+</div>
+
+
+
+ 
+
+  
+</div>
+</div>
+<footer class="footer-section">
+  <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div class="cta-text">
+                          <h4>Find us</h4>
+                          <span>1010 Avenue, sw 54321, chandigarh</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>9876543210 0</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="far fa-envelope-open"></i>
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>mail@info.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          
+                      </div>
+                      <div class="footer-text">
+                          <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                          elit,Lorem ipsum dolor sit amet.</p>
+                      </div>
+                      <div class="footer-social-icon">
+                          <span>Follow us</span>
+                          <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                          <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                          <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">about</a></li>
+                          <li><a href="#">services</a></li>
+                          <li><a href="#">portfolio</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Our Services</a></li>
+                          <li><a href="#">Expert Team</a></li>
+                          <li><a href="#">Contact us</a></li>
+                          <li><a href="#">Latest News</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Subscribe</h3>
+                      </div>
+                      <div class="footer-text mb-25">
+                          <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                      </div>
+                      <div class="subscribe-form">
+                          <form action="#">
+                              <input type="text" placeholder="Email Address">
+                              <button><i class="fab fa-telegram-plane"></i></button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Policy</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>

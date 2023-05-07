@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.912);
+        }
+        .top{
+            background-image: url("images/sup.jpg");
+            padding-top: 200px;
+            padding-bottom: 150px;
+            background-attachment: fixed;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.688);
+        }
+        ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+::selection{
+    background-color: #e70634;
+    color: #080808;
+}
+/* navigation */
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+max-width: 1400px;
+margin: auto;
+width: 100%;
+
+}
+
+
+
+/* logo */
+.logo{
+    color: #e70634;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0px auto 0px 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Monoton';
+    letter-spacing: 1px;
+   
+
+font-family: 'Monoton';
+
+}
+.logo span{
+    font-size: 1rem;
+    margin-left: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+.tho:hover{
+    border: 2px solid red !important;
+
+}
+.tho{
+    border: 2px solid white;
+    outline: red;
+}
+       
+
+    </style>
+</head>
+<body>
+
+
+
+      <!-- Navigation -->
+  <nav class="navigation py-3">
+
+
+
+
+    <!-- Logo -->
+    <p class="logo py-0">
+      Netcreed <span>.hd</span>
+
+    </p>
+
+   
+    
+
+    <!-- searchbox -->
+    <form action="">
+
+      <input type="text" name="Search" placeholder="Search Movie" class="search-input" style="padding: 5px; border-radius: 7px;" required id="">
+      <button type="submit" class="btn btn-danger">Search</button>
+
+    </form>
+  </nav>
+
+   <h1 class="container-fluid top text-center text-white" >
+    YOO!!!.....We are Glad  to have you <br> as a Partner. 
+   </h1> 
+
+  
+  <div class="container text-white d-flex justify-content-evenly pt-5">
+<div>
+    <h2>Address</h2>
+    <p>Alagbaka, Akure</p>
+</div>
+
+<div style="border-left: 2px solid rgba(255, 255, 255, 0.296); padding-right: 100px; border-radius: 3px; border-right: 2px solid rgba(255, 255, 255, 0.296); padding-left: 100px;">
+    <h2>Call</h2>
+    <p>+234 8064573753</p>
+</div>
+
+<div>
+   <h2>Email Address</h2> 
+   <p>Donaldayodeji@gmail.com</p>
+</div>
+    
+  </div>
+  <hr>
+  
+  <section>
+    <div class="container justify-content-between pb-4">
+        <div class="d-flex justify-content-between">
+        <input type="text" class=" tho text-white mb-5" style="width: 47%; background: transparent; height: 50px;" placeholder=" Name">
+        <input type="text" class=" tho text-white mb-5" style="width: 47%; background: transparent; height: 50px;" placeholder="Description">  </div>
+        <div class="d-flex justify-content-between">
+        <input type="tel" class=" tho text-white mb-5" style="width: 47%; background: transparent; height: 50px;" placeholder="Phone Number">
+        <input type="email" class=" tho text-white mb-5" style="width: 47%; background: transparent;  height: 50px;" placeholder="Email"></div><br>
+        <input type="file" class="text-white mb-5"><br>
+        <button type="submit" class="btn btn-danger w-100">Upload</button>
+    </div>
+  </section>
+</body>
+</html>

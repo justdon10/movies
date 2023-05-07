@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway:100,400');
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      font-weight: thin;
+      background: black;
+      transform: scale();
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ::selection {
+      background-color: #e70634;
+      color: #080808;
+    }
+
+    /* navigation */
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      max-width: 1400px;
+      margin: auto;
+      width: 100%;
+
+    }
+
+    .navigation .menu-icon {
+      cursor: pointer;
+      float: right;
+      padding: 20px 10px;
+      z-index: 103;
+
+
+    }
+
+    .navigation .menu-icon .nav-icon {
+      background-color: #ffffff;
+      display: block;
+      height: 2px;
+      width: 25px;
+      position: relative;
+      transition: background 0.2s ease-out;
+
+    }
+
+    .navigation .menu-icon .nav-icon::before,
+    .navigation .menu-icon .nav-icon::after {
+      background-color: #ffffffcc;
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: all ease-out 0.2s;
+    }
+
+    .navigation .menu-icon .nav-icon::before {
+      top: 8px;
+    }
+
+    .navigation .menu-icon .nav-icon::after {
+      top: -8px;
+    }
+
+    .navigation .menu-btn:checked~.menu-icon .nav-icon {
+      background-color: transparent;
+      ;
+      ;
+      ;
+    }
+
+    .navigation .menu-btn:checked~.menu-icon .nav-icon::before {
+      transform: rotate(-45deg);
+      top: 0px;
+    }
+
+    .navigation .menu-btn:checked~.menu-icon .nav-icon::after {
+      transform: rotate(45deg);
+      top: 0px;
+    }
+
+    .menu-btn {
+      display: none;
+
+    }
+
+    /* --menu------- */
+    .menu {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: #111111eb;
+      z-index: 102;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      animation: fade 0.3s;
+    }
+
+    .menu li a {
+      color: #ffffff;
+      margin: 0px 40px;
+      font-size: 2rem;
+      font-family: monoton;
+      transition: all ease 0.3s;
+    }
+
+    .menu li a:hover {
+      font-size: 2.3rem;
+      color: #e70634;
+      transition: all ease 0.3s;
+    }
+
+    .navigation .menu-btn:checked~.menu {
+      display: flex;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* logo */
+    .logo {
+      color: #e70634;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 3rem;
+      font-weight: 400;
+      margin: 0px auto 0px 40px;
+      display: flex;
+      align-items: center;
+      font-family: 'Monoton';
+      letter-spacing: 1px;
+
+
+      font-family: 'Monoton';
+
+    }
+
+    .logo span {
+      font-size: 1rem;
+      margin-left: 5px;
+      font-weight: 700;
+      letter-spacing: 2px;
+
+    }
+
+
+
+    body:after {
+      content: "";
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      z-index: -1;
+      width: 200%;
+      height: 200%;
+      background: url('https://i.pinimg.com/736x/f1/2e/2a/f12e2a1c7e8393322f71358a79139436--jedi-sith-episode-vii.jpg');
+      background-size: contain;
+      background-position: 600px -200px;
+
+      filter: blur(30px);
+    }
+
+    .movie-card {
+      position: relative;
+      box-sizing: border-box;
+      width: 50%;
+      max-width: 800px;
+      height: 300px;
+      background-position: center;
+      background-size: cover;
+      margin: 4vh auto;
+      border-radius: 4px;
+      box-shadow: 2px 3px 12px rgba(0, 0, 0, .4);
+      color: white;
+      padding: 2vh 3%;
+    }
+
+    .movie-card:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(to right, rgba(40, 40, 60, 1) 0%, rgba(40, 0, 60, 0) 90%);
+      background-blend-mode: multiply;
+      will-change: transform;
+      z-index: 0;
+    }
+
+    i {
+      font-size: .7em;
+      color: #ff5b84;
+    }
+
+    h1 {
+      font-size: 170%;
+      position: relative;
+      z-index: 10;
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      margin-right: 80px;
+      color: rgb(210, 210, 210);
+    }
+    @media(max-width:1200px){
+    
+  
+    .post-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #main-slider,
+    #latest,
+    .slider-btns{
+        width: 90%;
+    }
+    .menu li a{
+        margin: 0px;
+        font-size: 1.6rem;
+    }
+    .menu{
+        flex-direction: column;
+    }
+  }
+
+
+    .watch {
+      display: block;
+      border: 1px solid white;
+      border-radius: 4px;
+      position: relative;
+      z-index: 10;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      background: rgba(0, 0, 0, .3);
+      margin: 20px 0px;
+      outline: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+      transition: all .2s;
+    }
+
+    button:hover {
+      background: rgba(255, 255, 255, .8);
+      color: black;
+      box-shadow: 0 0 10px rgba(255, 255, 255, .5);
+      mix-blend-mode: screen;
+    }
+
+    button:active {
+      transform: translateY(2px);
+    }
+
+    p {
+      position: relative;
+      z-index: 10;
+      font-size: .8em;
+      width: 60%;
+      height: 35%;
+    }
+.vid{
+  background-image: url("./images/no\ way\ home.jpg");
+}
+.vid1{
+  background-image: url("./images/brotherhood.jpg");
+}
+.vid2{
+  background-image: url("./images/shazam.jpg");
+}
+.vid3{
+  background-image: url("./images/rush.jpg ");
+}
+.vid4{
+  background-image: url("./images/zack.jpg ");
+}
+.vid5{
+  background-image: url("./images/shanty.jpg");
+}
+    @media (max-width: 768px) {
+
+      .movie-card {
+        width: 75%;
+        height: 200px;
+      }
+
+      h1 {
+        font-size: 120%;
+      }
+
+      p {
+        display: none;
+        /*     overflow: hidden;
+    width: 100%;
+    height: 30%; */
+      }
+
+      .watch {
+        margin: 5% auto;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .movie-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+  <!-- Navigation -->
+  <nav class="navigation py-4">
+
+    <!-- menu-btn   -->
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+      <span class="nav-icon"></span>
+
+    </label>
+
+
+    <!-- Logo -->
+    <p class="logo ">
+      Netcreed <span>.hd</span>
+
+    </p>
+
+    <!-- menu -->
+    <ul class="menu">
+      <li><a href="./movies.html">Home</a></li>
+      <li><a href="./book.html">Tickets</a></li>
+      <li><a href="./Shows.html">TV Show</a></li>
+      <li><a href="./movie.html">Movies</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+
+    </ul>
+
+
+  </nav>
+  <!-- nav-end -->
+
+  <section class="">
+    <div class="container movie-card vid">
+      <h1>Spiderman : <i> No way home</i></h1>
+      <p>With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</p>
+       <a href="./vid.html"><button type="button" class="watch" style="width: 20%;">Watch Movie</button></a> 
+    </div>
+
+    <div class="container movie-card vid1">
+      <h1>Brotherhood</h1>
+      <p>After years of fighting to survive on the streets of Lagos, two brothers fall on opposite sides of the law. The bonds of brotherhood are put to the ultimate test as one joins a Taskforce that hunts down the other and his gang.!</p>
+      <a href="./vid1.html"><button type="button" class="watch" style="width: 20%;">Watch Movie</button></a> 
+    </div>
+
+    <div class="container movie-card vid2 ">
+      <h1>Shazam : <i> Fury of the Gods</i></h1>
+      <p>The film continues the story of teenage Billy Batson who, upon reciting the magic word "SHAZAM!" is transformed into his adult Super Hero alter ego, Shazam.</p>
+      <a href="./vid2.html"><button type="button" class="watch" style="width: 20%;">Watch Movie</button></a> 
+    </div>
+
+    <div class="container movie-card vid3">
+      <h1>Rush Hour</h1>
+      <p>A loyal and dedicated Hong Kong Inspector teams up with a reckless and loudmouthed L.A.P.D. detective to rescue the Chinese Consul's kidnapped daughter, while trying to arrest a dangerous crime lord along the way.
+        Photos</p>
+        <a href="./vid3.html"><button type="button" class="watch" style="width: 20%;">Watch Movie</button></a> 
+    </div>
+
+    <div class="container movie-card vid4 ">
+      <h1>Zack Snyder's Justice League></h1>
+      <p>Determined to ensure that Superman's ultimate sacrifice wasn't in vain, Bruce Wayne recruits a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
+      <a href="./vid4.html"><button type="button" class="watch" style="width: 20%;">Watch Movie</button></a> 
+    </div>
+
+    <div class="container movie-card vid5">
+      <h1>Shanty Town</i></h1>
+      <p>A group of courtesans attempts to escape the grasp of a notorious kingpin . but political corruption and blood ties make freedom a near-impossible goal.</p>
+      <a href="./vid5.html"><button type="button" class="watch" style="width: 20%;">Watch Movie</button></a> 
+    </div>
+
+
+
+    
+  </section>
+
+
+
+
+</body>
+
+</html>
